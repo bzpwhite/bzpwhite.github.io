@@ -1,45 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   
-  
+    
+    <entry>
+      <title><![CDATA[Markdown语法]]></title>
+      <url>%2F2017%2F03%2F30%2FMarkdown%E8%AF%AD%E6%B3%95%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[至自己的一段话]]></title>
+      <url>%2F2017%2F03%2F30%2F%E7%BE%8E%E6%96%87%2F</url>
+      <content type="text"><![CDATA[我很喜欢这句话：在一切变好之前，我们总要经历一些不开心的日子，这段日子也许很长，也许只是一觉醒来。有时候，选择快乐，更需要勇气。 送给人生路上的你给努力的你在抱怨自己赚钱少之前，先努力，学着让自己值钱。如果你不相信努力和时光，那么时光第一个就会辜负你！ 给年轻的你你可以犯错，可以反悔，可以跌倒，但是千万不要放弃。你有那么好的年纪，为什么不给自己更多奋斗的可能？ 给勇敢的你不管多险峻的高山，总会给勇敢的人留一条攀登的路。只要你肯迈步，路就会在你脚下延伸。 给迷茫的你每天早上两个简单的选择：回头去睡或起身追逐梦想。迷茫的时候，选择更艰辛的那条路。 给自信的你最使人颓废的往往不是前途的坎坷，而是自信的丧失。当全世界都在说放弃的时候，坚定地告诉自己：再试一次！ 给睿智的你人生的关键不在于拿了一副好牌，而在于打好一副坏牌。多看一本书，去做可以做的事，那么磨难必定会照亮你的路。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[git使用教程]]></title>
+      <url>%2F2017%2F03%2F30%2Fgit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%2F</url>
+      <content type="text"><![CDATA[版本库的建立从服务器下载到本地1git clone 仓库地址 初始化文件夹为git必须要在要成为git项目的目录中 1git init 链接到远端仓库1git remote add origin https://github.com/lzxb/react-cnode.git 一个项目可以同时拥有好几个远端仓库为了能够区分，通常会起不同的名字。通常主远端仓库被称为origin。 版本提交检查状态1git status 暂存暂存一个文件 1git add a.html 暂存所有文件 1git add . 提交1git commit -m "提示内容" 上传版本上传到服务器12341. git push 2.3. # 提交到指定分支4. $ git push origin master 更新到本地1git pull 分支当你在做一个新功能的时候，最好是在一个独立的区域上开发，通常称之为分支。分支之间相互独立，并且拥有自己的历史记录。这样做的原因是： 稳定版本的代码不会被破坏 不同的功能可以由不同开发者同时开发 开发者可以专注于自己的分支，不用担心被其他人破坏了环境 在不确定之前，同一个特性可以拥有几个版本，便于比较创建新分支1git branch 分支名 切换分支查看当前分支状态 1git checkout 分支名 ####合并分支 用当前分支 合并 指定名称分支 1git merge 分支名 ####删除分支1git branch -d 分支名 高级查看提交1git log 查看某一次提交 1git show 一部分提交id 查看两次提交的不同 1git diff 09bd8cc..ba25c0ff 回滚某个文件到之前某个版本1git checkout 提交id 文件名 回滚提交12git revert HEADgit revert b10cc123]]></content>
+    </entry>
+
     
     <entry>
       <title><![CDATA[搭建博客过程]]></title>
-      <url>http://yoursite.com/2017/03/29/%E5%8A%A8%E6%9C%BA/</url>
-      <content type="html"><![CDATA[<h3 id="为什么要搭建自己的博客呢？"><a href="#为什么要搭建自己的博客呢？" class="headerlink" title="为什么要搭建自己的博客呢？"></a>为什么要搭建自己的博客呢？</h3><p>前些天，自己刚刚接触hexo，并用hexo搭建了自己的博客，对hexo的强大搭建博客能力感到赞叹。用我的实际体验来说，你只要是有点计算机基础的人，完全可以轻松的使用hexo搭建起自己的博客。你要是用过github、oschina、gitcafe其中的一样，那对你来说，就可以分分钟上手了。其实网上使用hexo搭建博客的教程多的是，我自己也是跟着zippera的教程搭建的博客，那么我还写这篇博客是出于什么目的呢？原因如下：第一，网上的教程大多比较老了，我在搭建的过程中就遇到过不少问题，因此我觉得有必要写个适配hexo3.0的教程。第二，如你所见，本博客由于刚刚起步，博文少的可怜，因此写这篇博文也可以充场子，免得太冷清。第三，算是自己的个人笔记吧，我本人对于刚学的东西都喜欢用博文记录，免得以后自己忘掉。</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 搭建博客 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F03%2F29%2F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%2F</url>
+      <content type="text"><![CDATA[为什么要搭建自己的博客呢？前些天，自己刚刚接触hexo，并用hexo搭建了自己的博客，对hexo的强大搭建博客能力感到赞叹。用我的实际体验来说，你只要是有点计算机基础的人，完全可以轻松的使用hexo搭建起自己的博客。你要是用过github、oschina、gitcafe其中的一样，那对你来说，就可以分分钟上手了。其实网上使用hexo搭建博客的教程多的是，我自己也是跟着zippera的教程搭建的博客，那么我还写这篇博客是出于什么目的呢？原因如下：第一，网上的教程大多比较老了，我在搭建的过程中就遇到过不少问题，因此我觉得有必要写个适配hexo3.0的教程。第二，如你所见，本博客由于刚刚起步，博文少的可怜，因此写这篇博文也可以充场子，免得太冷清。第三，算是自己的个人笔记吧，我本人对于刚学的东西都喜欢用博文记录，免得以后自己忘掉。 搭建步骤： 环境搭建 安装配置Hexo 配置github仓库 配置自己的网址（也叫域名） 第一步：环境搭建 安装git （因为要给github上传文章） 安装Node.js（因为Hexo是基于Node.js开发的） ps:因为我已经装过了在此就不多赘述了。 第二步：安装和配置Hexo 以下命令都是直接复制粘贴到电脑终点运行的，上面的环境配置成功以后就可以使用npm安装Hexo了 npm install -g hexo-cli 上面的环境配置成功以后就可以使用npm安装Hexo了，然后cd到Hexo文件夹，也就是进去这个文件夹 然后依次执行下面的命令 hexo init //初始化文件夹 npm install //安装依赖 hexo generate(可简写为hexo g) //生成静态文件 然后启动本地这个Hexo服务 hexo server(可简写为hexo s) 本地查看 现在我们已经搭建起本地的hexo博客了，在浏览器输入localhost:4000看看。 显示的网站你可能看着不好看，现在我们更改一下主题 我的博客主题是：next。 首先打开创建的文件夹，找到themes目录，去网上挑选自己喜欢的主题下载到themes目录，我的github上也有几款主题可供你选择，然后打开根目录下的_config.yml文件，修改里面的theme为你下载主题文件夹的名字，这样主题就换好了。 接着执行下面的命令： hexo clean hexo g hexo s 记得当修改完文件后执行这三步命令，好了，到此为止我们已经完成了本地Hexo的安装和配置。 第三步：配置github仓库注册账号我就不用说了吧，都很简单,然后创建一个的放博客文章的仓库 点击Crete a repositor 切记仓库名字为：github用户名.github.io 接着，打开根目录下的_config.yml，拉到最下面 deploy: type: git repo: &lt;repository url&gt; branch: [branch] 大家要注意每个字段后面有空格,repo记住一定要是https，不能为http,不然会报错 保存，在根目录下依次执行下面的命令： npm install hexo-deployer-git --save hexo clean hexo g hexo d 接下来就可以访问啦！打开浏览器，输入github用户名.github.io 最后要想更加完善自己的博客可以去阅读hexo中文文档和next主题文档。]]></content>
     </entry>
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>http://yoursite.com/2017/03/28/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-      
-        
-    </entry>
+
     
   
   
