@@ -31,4 +31,24 @@
     
   
   
+    
+    <entry>
+      <title><![CDATA[关于我]]></title>
+      <url>http://yoursite.com/about/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>http://yoursite.com/categories/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>http://yoursite.com/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+  
 </search>
