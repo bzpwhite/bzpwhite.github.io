@@ -1,230 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   
-  
     
     <entry>
       <title><![CDATA[Markdown 基本语法]]></title>
-      <url>http://yoursite.com/2017/03/30/Markdown%E8%AF%AD%E6%B3%95/</url>
-      <content type="html"><![CDATA[<p>因为写博客要用到Markdown，所以对它进行了简单的学习，下面是我在学习Markdown时做的笔记。学完这些Markdown的基本使用已经不成问题。</p>
-<h4 id="1-标题设置（让字体变大，和word的标题意思一样）"><a href="#1-标题设置（让字体变大，和word的标题意思一样）" class="headerlink" title="1. 标题设置（让字体变大，和word的标题意思一样）"></a>1. 标题设置（让字体变大，和word的标题意思一样）</h4><p>在Markdown当中设置标题，有两种方式：  </p>
-<p>第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。  </p>
-<p>第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</p>
-<h4 id="2-块注释（blockquote）"><a href="#2-块注释（blockquote）" class="headerlink" title="2. 块注释（blockquote）"></a>2. 块注释（blockquote）</h4><p>通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。）</p>
-<h4 id="3-斜体"><a href="#3-斜体" class="headerlink" title="3. 斜体"></a>3. 斜体</h4><p>将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来</p>
-<h4 id="4-粗体"><a href="#4-粗体" class="headerlink" title="4. 粗体"></a>4. 粗体</h4><p>将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来</p>
-<h4 id="5-无序列表"><a href="#5-无序列表" class="headerlink" title="5. 无序列表"></a>5. 无序列表</h4><p>在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只是用一种无序列表的表示方式）</p>
-<h4 id="6-有序列表"><a href="#6-有序列表" class="headerlink" title="6. 有序列表"></a>6. 有序列表</h4><p>使用数字后面跟上句号。（还要有空格）</p>
-<h4 id="7-链接（Links）"><a href="#7-链接（Links）" class="headerlink" title="7. 链接（Links）"></a>7. 链接（Links）</h4><p>Markdown中有两种方式，实现链接，分别为内联方式和引用方式。</p>
-<p>内联方式：This is an <a href="http://example.com/" target="_blank" rel="external">example link</a>.  </p>
-<p>引用方式：  </p>
-<p>I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].</p>
-<pre><code>[1]: http://google.com/        &quot;Google&quot; 
-
-[2]: http://search.yahoo.com/  &quot;Yahoo Search&quot; 
-
-[3]: http://search.msn.com/    &quot;MSN Search&quot;
-</code></pre><h4 id="8-图片（Images）"><a href="#8-图片（Images）" class="headerlink" title="8. 图片（Images）"></a>8. 图片（Images）</h4><p>图片的处理方式和链接的处理方式，非常的类似。 </p>
-<p>内联方式：</p>
-<pre><code>![alt text](/path/to/img.jpg &quot;Title&quot;) 
-</code></pre><p>引用方式：</p>
-<pre><code>![alt text][id] 
-[id]: /path/to/img.jpg &quot;Title&quot;  
-</code></pre><h4 id="9-代码（HTML中所谓的Code"><a href="#9-代码（HTML中所谓的Code" class="headerlink" title="9. 代码（HTML中所谓的Code)"></a>9. 代码（HTML中所谓的Code)</h4><p>实现方式有两种：</p>
-<p>第一种：简单文字出现一个代码框。使用<code>&lt;blockquote&gt;</code>。（<code>不是单引号而是左上角的ESC下面~中的</code>）</p>
-<p>第二种：大片文字需要实现代码框。使用Tab和四个空格。</p>
-<h4 id="10-脚注（footnote）"><a href="#10-脚注（footnote）" class="headerlink" title="10. 脚注（footnote）"></a>10. 脚注（footnote）</h4><p>实现方式如下：</p>
-<p>hello[^hello]</p>
-<pre><code>[^hello]: hi
-</code></pre><h4 id="11-下划线"><a href="#11-下划线" class="headerlink" title="11. 下划线"></a>11. 下划线</h4><p>在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）</p>
-<h4 id="12-换行"><a href="#12-换行" class="headerlink" title="12. 换行"></a>12. 换行</h4><pre><code>方法1: 连续两个以上空格+回车
-   方法2：使用html语言换行标签：&lt;br&gt;
-</code></pre><h4 id="13-首行缩进两个字符：-每个表示一个空格，连续使用两个即可）"><a href="#13-首行缩进两个字符：-每个表示一个空格，连续使用两个即可）" class="headerlink" title="13.首行缩进两个字符：(每个表示一个空格，连续使用两个即可）"></a>13.首行缩进两个字符：(每个表示一个空格，连续使用两个即可）</h4><pre><code>&amp;ensp; 半角的空格
-   &amp;emsp; 全角的空格 
-</code></pre><h4 id="14-字体、字号与颜色"><a href="#14-字体、字号与颜色" class="headerlink" title="14.字体、字号与颜色:"></a>14.字体、字号与颜色:</h4><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过类似HTML的标记语法，它可以使普通文本内容具有一定的格式。但是它本身是不支持修改字体、字号与颜色等功能的！</p>
-<p>CSDN-markdown编辑器是其衍生版本，扩展了Markdown的功能（如表格、脚注、内嵌HTML等等）！对，就是内嵌HTML，接下来要讲的功能就需要使用内嵌HTML的方法来实现。 </p>
-<font face="微软雅黑" color="red">字体，字号和颜色编辑如下代码</font>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;font face=<span class="string">"黑体"</span>&gt;我是黑体字&lt;/font&gt;</div><div class="line">&lt;font face=<span class="string">"微软雅黑"</span>&gt;我是微软雅黑&lt;/font&gt;</div><div class="line">&lt;font face=<span class="string">"STCAIYUN"</span>&gt;我是华文彩云&lt;/font&gt;</div><div class="line">&lt;font color=<span class="comment">#0099ff size=7 face="黑体"&gt;color=#0099ff size=72 face="黑体"&lt;/font&gt;</span></div><div class="line">&lt;font color=<span class="comment">#00ffff size=72&gt;color=#00ffff&lt;/font&gt;</span></div><div class="line">&lt;font color=gray size=72&gt;color=gray&lt;/font&gt;</div></pre></td></tr></table></figure>
-<h4 id="15-背景色"><a href="#15-背景色" class="headerlink" title="15.背景色"></a>15.背景色</h4><p>Markdown本身不支持背景色设置，需要采用内置html的方式实现：借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。举例如下：</p>
-<pre><code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=orange&gt;背景色是：orange&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-</code></pre><p>效果如下：</p>
-<table><tr><td bgcolor="orange">背景色是：orange</td></tr></table>
-
-<h4 id="16-使用LaTex数学公式"><a href="#16-使用LaTex数学公式" class="headerlink" title="16.使用LaTex数学公式:"></a>16.使用LaTex数学公式:</h4><ul>
-<li>行内公式：使用两个”$”符号引用公式: $公式$</li>
-<li>行间公式：使用两对“$$”符号引用公式： $$公式$$</li>
-</ul>
-]]></content>
-      
-        <categories>
-            
-            <category> 知识 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Markdown </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F03%2F30%2FMarkdown%E8%AF%AD%E6%B3%95%2F</url>
+      <content type="text"><![CDATA[因为写博客要用到Markdown，所以对它进行了简单的学习，下面是我在学习Markdown时做的笔记。学完这些Markdown的基本使用已经不成问题。 1. 标题设置（让字体变大，和word的标题意思一样）在Markdown当中设置标题，有两种方式： 第一种：通过在文字下方添加“=”和“-”，他们分别表示一级标题和二级标题。 第二种：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大） 2. 块注释（blockquote）通过在文字开头添加“&gt;”表示块注释。（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。） 3. 斜体将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来 4. 粗体将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来 5. 无序列表在文字开头添加(, +, and -)实现无序列表。但是要注意在(, +, and -)和文字之间需要添加空格。（建议：一个文档中只是用一种无序列表的表示方式） 6. 有序列表使用数字后面跟上句号。（还要有空格） 7. 链接（Links）Markdown中有两种方式，实现链接，分别为内联方式和引用方式。 内联方式：This is an example link. 引用方式： I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3]. [1]: http://google.com/ &quot;Google&quot; [2]: http://search.yahoo.com/ &quot;Yahoo Search&quot; [3]: http://search.msn.com/ &quot;MSN Search&quot; 8. 图片（Images）图片的处理方式和链接的处理方式，非常的类似。 内联方式： ![alt text](/path/to/img.jpg &quot;Title&quot;) 引用方式： ![alt text][id] [id]: /path/to/img.jpg &quot;Title&quot; 9. 代码（HTML中所谓的Code)实现方式有两种： 第一种：简单文字出现一个代码框。使用&lt;blockquote&gt;。（不是单引号而是左上角的ESC下面~中的） 第二种：大片文字需要实现代码框。使用Tab和四个空格。 10. 脚注（footnote）实现方式如下： hello[^hello] [^hello]: hi 11. 下划线在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题） 12. 换行方法1: 连续两个以上空格+回车 方法2：使用html语言换行标签：&lt;br&gt; 13.首行缩进两个字符：(每个表示一个空格，连续使用两个即可）&amp;ensp; 半角的空格 &amp;emsp; 全角的空格 14.字体、字号与颜色:Markdown是一种可以使用普通文本编辑器编写的标记语言，通过类似HTML的标记语法，它可以使普通文本内容具有一定的格式。但是它本身是不支持修改字体、字号与颜色等功能的！ CSDN-markdown编辑器是其衍生版本，扩展了Markdown的功能（如表格、脚注、内嵌HTML等等）！对，就是内嵌HTML，接下来要讲的功能就需要使用内嵌HTML的方法来实现。 字体，字号和颜色编辑如下代码 123456&lt;font face="黑体"&gt;我是黑体字&lt;/font&gt;&lt;font face="微软雅黑"&gt;我是微软雅黑&lt;/font&gt;&lt;font face="STCAIYUN"&gt;我是华文彩云&lt;/font&gt;&lt;font color=#0099ff size=7 face="黑体"&gt;color=#0099ff size=72 face="黑体"&lt;/font&gt;&lt;font color=#00ffff size=72&gt;color=#00ffff&lt;/font&gt;&lt;font color=gray size=72&gt;color=gray&lt;/font&gt; 15.背景色Markdown本身不支持背景色设置，需要采用内置html的方式实现：借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。举例如下： &lt;table&gt;&lt;tr&gt;&lt;td bgcolor=orange&gt;背景色是：orange&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt; 效果如下： 背景色是：orange 16.使用LaTex数学公式: 行内公式：使用两个”$”符号引用公式: $公式$ 行间公式：使用两对“$$”符号引用公式： $$公式$$]]></content>
     </entry>
+
     
     <entry>
       <title><![CDATA[至自己的一段话]]></title>
-      <url>http://yoursite.com/2017/03/30/%E7%BE%8E%E6%96%87/</url>
-      <content type="html"><![CDATA[<blockquote>
-<p>我很喜欢这句话：在一切变好之前，我们总要经历一些不开心的日子，这段日子也许很长，也许只是一觉醒来。有时候，选择快乐，更需要勇气。</p>
-</blockquote>
-<h2 id="送给人生路上的你"><a href="#送给人生路上的你" class="headerlink" title="送给人生路上的你"></a>送给人生路上的你</h2><h3 id="给努力的你"><a href="#给努力的你" class="headerlink" title="给努力的你"></a>给努力的你</h3><p>在抱怨自己赚钱少之前，先努力，学着让自己值钱。如果你不相信努力和时光，那么时光第一个就会辜负你！</p>
-<h3 id="给年轻的你"><a href="#给年轻的你" class="headerlink" title="给年轻的你"></a>给年轻的你</h3><p>你可以犯错，可以反悔，可以跌倒，但是千万不要放弃。你有那么好的年纪，为什么不给自己更多奋斗的可能？</p>
-<h3 id="给勇敢的你"><a href="#给勇敢的你" class="headerlink" title="给勇敢的你"></a>给勇敢的你</h3><p>不管多险峻的高山，总会给勇敢的人留一条攀登的路。只要你肯迈步，路就会在你脚下延伸。</p>
-<h3 id="给迷茫的你"><a href="#给迷茫的你" class="headerlink" title="给迷茫的你"></a>给迷茫的你</h3><p>每天早上两个简单的选择：回头去睡或起身追逐梦想。迷茫的时候，选择更艰辛的那条路。</p>
-<h3 id="给自信的你"><a href="#给自信的你" class="headerlink" title="给自信的你"></a>给自信的你</h3><p>最使人颓废的往往不是前途的坎坷，而是自信的丧失。当全世界都在说放弃的时候，坚定地告诉自己：再试一次！</p>
-<h3 id="给睿智的你"><a href="#给睿智的你" class="headerlink" title="给睿智的你"></a>给睿智的你</h3><p>人生的关键不在于拿了一副好牌，而在于打好一副坏牌。多看一本书，去做可以做的事，那么磨难必定会照亮你的路。</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 心灵鸡汤 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 告诫自己 </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F03%2F30%2F%E7%BE%8E%E6%96%87%2F</url>
+      <content type="text"><![CDATA[我很喜欢这句话：在一切变好之前，我们总要经历一些不开心的日子，这段日子也许很长，也许只是一觉醒来。有时候，选择快乐，更需要勇气。 送给人生路上的你给努力的你在抱怨自己赚钱少之前，先努力，学着让自己值钱。如果你不相信努力和时光，那么时光第一个就会辜负你！ 给年轻的你你可以犯错，可以反悔，可以跌倒，但是千万不要放弃。你有那么好的年纪，为什么不给自己更多奋斗的可能？ 给勇敢的你不管多险峻的高山，总会给勇敢的人留一条攀登的路。只要你肯迈步，路就会在你脚下延伸。 给迷茫的你每天早上两个简单的选择：回头去睡或起身追逐梦想。迷茫的时候，选择更艰辛的那条路。 给自信的你最使人颓废的往往不是前途的坎坷，而是自信的丧失。当全世界都在说放弃的时候，坚定地告诉自己：再试一次！ 给睿智的你人生的关键不在于拿了一副好牌，而在于打好一副坏牌。多看一本书，去做可以做的事，那么磨难必定会照亮你的路。]]></content>
     </entry>
+
     
     <entry>
       <title><![CDATA[git使用教程]]></title>
-      <url>http://yoursite.com/2017/03/30/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
-      <content type="html"><![CDATA[<h2 id="版本库的建立"><a href="#版本库的建立" class="headerlink" title="版本库的建立"></a>版本库的建立</h2><h3 id="从服务器下载到本地"><a href="#从服务器下载到本地" class="headerlink" title="从服务器下载到本地"></a>从服务器下载到本地</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> 仓库地址</div></pre></td></tr></table></figure>
-<h3 id="初始化文件夹为git"><a href="#初始化文件夹为git" class="headerlink" title="初始化文件夹为git"></a>初始化文件夹为git</h3><p>必须要在要成为git项目的目录中</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
-<h3 id="链接到远端仓库"><a href="#链接到远端仓库" class="headerlink" title="链接到远端仓库"></a>链接到远端仓库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin https://github.com/lzxb/react-cnode.git</div></pre></td></tr></table></figure>
-<p>一个项目可以同时拥有好几个远端仓库为了能够区分，通常会起不同的名字。通常主远端仓库被称为origin。</p>
-<hr>
-<h3 id="版本提交"><a href="#版本提交" class="headerlink" title="版本提交"></a>版本提交</h3><h4 id="检查状态"><a href="#检查状态" class="headerlink" title="检查状态"></a>检查状态</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git status</div></pre></td></tr></table></figure>
-<h4 id="暂存"><a href="#暂存" class="headerlink" title="暂存"></a>暂存</h4><p>暂存一个文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add a.html</div></pre></td></tr></table></figure>
-<p>暂存所有文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure>
-<h4 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"提示内容"</span></div></pre></td></tr></table></figure>
-<hr>
-<h3 id="上传版本"><a href="#上传版本" class="headerlink" title="上传版本"></a>上传版本</h3><h4 id="上传到服务器"><a href="#上传到服务器" class="headerlink" title="上传到服务器"></a>上传到服务器</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1. git push </div><div class="line">2.</div><div class="line">3. <span class="comment"># 提交到指定分支</span></div><div class="line">4. $ git push origin master</div></pre></td></tr></table></figure>
-<h4 id="更新到本地"><a href="#更新到本地" class="headerlink" title="更新到本地"></a>更新到本地</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git pull</div></pre></td></tr></table></figure>
-<hr>
-<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><p>当你在做一个新功能的时候，最好是在一个独立的区域上开发，通常称之为分支。分支之间相互独立，并且拥有自己的历史记录。这样做的原因是：</p>
-<ul>
-<li>稳定版本的代码不会被破坏</li>
-<li>不同的功能可以由不同开发者同时开发</li>
-<li>开发者可以专注于自己的分支，不用担心被其他人破坏了环境</li>
-<li>在不确定之前，同一个特性可以拥有几个版本，便于比较<h4 id="创建新分支"><a href="#创建新分支" class="headerlink" title="创建新分支"></a>创建新分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch 分支名</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h4><p>查看当前分支状态</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout 分支名</div></pre></td></tr></table></figure>
-<p>####合并分支</p>
-<p>用当前分支 合并 指定名称分支</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git merge 分支名</div></pre></td></tr></table></figure>
-<p>####删除分支<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch <span class="_">-d</span> 分支名</div></pre></td></tr></table></figure></p>
-<h4 id="高级"><a href="#高级" class="headerlink" title="高级"></a>高级</h4><p><strong>查看提交</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">log</span></div></pre></td></tr></table></figure></p>
-<p>查看某一次提交</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git show  一部分提交id</div></pre></td></tr></table></figure>
-<p>查看两次提交的不同</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff 09bd8cc..ba25c0ff</div></pre></td></tr></table></figure>
-<h4 id="回滚某个文件到之前某个版本"><a href="#回滚某个文件到之前某个版本" class="headerlink" title="回滚某个文件到之前某个版本"></a>回滚某个文件到之前某个版本</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout 提交id 文件名</div></pre></td></tr></table></figure>
-<h4 id="回滚提交"><a href="#回滚提交" class="headerlink" title="回滚提交"></a>回滚提交</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git revert HEAD</div><div class="line">git revert b10cc123</div></pre></td></tr></table></figure>]]></content>
-      
-        <categories>
-            
-            <category> 知识 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> git </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F03%2F30%2Fgit%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%2F</url>
+      <content type="text"><![CDATA[版本库的建立从服务器下载到本地1git clone 仓库地址 初始化文件夹为git必须要在要成为git项目的目录中 1git init 链接到远端仓库1git remote add origin https://github.com/lzxb/react-cnode.git 一个项目可以同时拥有好几个远端仓库为了能够区分，通常会起不同的名字。通常主远端仓库被称为origin。 版本提交检查状态1git status 暂存暂存一个文件 1git add a.html 暂存所有文件 1git add . 提交1git commit -m "提示内容" 上传版本上传到服务器12341. git push 2.3. # 提交到指定分支4. $ git push origin master 更新到本地1git pull 分支当你在做一个新功能的时候，最好是在一个独立的区域上开发，通常称之为分支。分支之间相互独立，并且拥有自己的历史记录。这样做的原因是： 稳定版本的代码不会被破坏 不同的功能可以由不同开发者同时开发 开发者可以专注于自己的分支，不用担心被其他人破坏了环境 在不确定之前，同一个特性可以拥有几个版本，便于比较创建新分支1git branch 分支名 切换分支查看当前分支状态 1git checkout 分支名 ####合并分支 用当前分支 合并 指定名称分支 1git merge 分支名 ####删除分支1git branch -d 分支名 高级查看提交1git log 查看某一次提交 1git show 一部分提交id 查看两次提交的不同 1git diff 09bd8cc..ba25c0ff 回滚某个文件到之前某个版本1git checkout 提交id 文件名 回滚提交12git revert HEADgit revert b10cc123]]></content>
     </entry>
+
     
     <entry>
       <title><![CDATA[搭建博客过程]]></title>
-      <url>http://yoursite.com/2017/03/29/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B/</url>
-      <content type="html"><![CDATA[<h2 id="为什么要搭建自己的博客呢？"><a href="#为什么要搭建自己的博客呢？" class="headerlink" title="为什么要搭建自己的博客呢？"></a>为什么要搭建自己的博客呢？</h2><p>前些天，自己刚刚接触hexo，并用hexo搭建了自己的博客，对hexo的强大搭建博客能力感到赞叹。用我的实际体验来说，你只要是有点计算机基础的人，完全可以轻松的使用hexo搭建起自己的博客。你要是用过github、oschina、gitcafe其中的一样，那对你来说，就可以分分钟上手了。其实网上使用hexo搭建博客的教程多的是，我自己也是跟着zippera的教程搭建的博客，那么我还写这篇博客是出于什么目的呢？原因如下：第一，网上的教程大多比较老了，我在搭建的过程中就遇到过不少问题，因此我觉得有必要写个适配hexo3.0的教程。第二，如你所见，本博客由于刚刚起步，博文少的可怜，因此写这篇博文也可以充场子，免得太冷清。第三，算是自己的个人笔记吧，我本人对于刚学的东西都喜欢用博文记录，免得以后自己忘掉。</p>
-<h2 id="搭建步骤："><a href="#搭建步骤：" class="headerlink" title="搭建步骤："></a>搭建步骤：</h2><ul>
-<li>环境搭建</li>
-<li>安装配置Hexo</li>
-<li>配置github仓库</li>
-<li>配置自己的网址（也叫域名）</li>
-</ul>
-<h3 id="第一步：环境搭建"><a href="#第一步：环境搭建" class="headerlink" title="第一步：环境搭建"></a>第一步：环境搭建</h3><ul>
-<li><p>安装git （因为要给github上传文章）</p>
-</li>
-<li><p>安装Node.js（因为Hexo是基于Node.js开发的）</p>
-</li>
-</ul>
-<p>ps:因为我已经装过了在此就不多赘述了。</p>
-<h3 id="第二步：安装和配置Hexo"><a href="#第二步：安装和配置Hexo" class="headerlink" title="第二步：安装和配置Hexo"></a>第二步：安装和配置Hexo</h3><p> 以下命令都是直接复制粘贴到电脑终点运行的，上面的环境配置成功以后就可以使用npm安装Hexo了</p>
-<pre><code>npm install -g hexo-cli
-</code></pre><p>上面的环境配置成功以后就可以使用npm安装Hexo了，然后cd到Hexo文件夹，也就是进去这个文件夹</p>
-<p>然后依次执行下面的命令</p>
-<pre><code>hexo init                        //初始化文件夹
-npm install                         //安装依赖
-hexo generate(可简写为hexo g)     //生成静态文件
-</code></pre><p>然后启动本地这个Hexo服务</p>
-<pre><code>hexo server(可简写为hexo s)       
-</code></pre><p>本地查看</p>
-<p>现在我们已经搭建起本地的hexo博客了，在浏览器输入localhost:4000看看。<br><img src="https://raw.githubusercontent.com/CoderTian/CoderTian.github.io/master/2015/11/26/github-hexo-blog/success.png" alt="hexo"></p>
-<p><strong>显示的网站你可能看着不好看，现在我们更改一下主题</strong></p>
-<p>我的博客主题是：<a href="">next</a>。</p>
-<p>首先打开创建的文件夹，找到themes目录，去网上挑选自己喜欢的主题下载到themes目录，我的<a href="https://github.com/bzpwhite/themes" target="_blank" rel="external">github</a>上也有几款主题可供你选择，然后打开根目录下的_config.yml文件，修改里面的theme为你下载主题文件夹的名字，这样主题就换好了。</p>
-<p>接着执行下面的命令：</p>
-<pre><code>hexo clean
-hexo g
-hexo s
-</code></pre><p>记得当修改完文件后执行这三步命令，好了，到此为止我们已经完成了本地Hexo的安装和配置。</p>
-<h3 id="第三步：配置github仓库"><a href="#第三步：配置github仓库" class="headerlink" title="第三步：配置github仓库"></a>第三步：配置github仓库</h3><p>注册账号我就不用说了吧，都很简单,然后创建一个的放博客文章的仓库</p>
-<p>点击Crete a repositor</p>
-<p><strong>切记仓库名字为：github用户名.github.io</strong></p>
-<p>接着，打开根目录下的_config.yml，拉到最下面</p>
-<pre><code>deploy:
-  type: git
-  repo: &lt;repository url&gt;
-  branch: [branch]
-</code></pre><p><strong>大家要注意每个字段后面有空格,repo记住一定要是https，不能为http,不然会报错</strong></p>
-<p>保存，在根目录下依次执行下面的命令：</p>
-<pre><code>npm install hexo-deployer-git --save
-hexo clean
-hexo g
-hexo d
-</code></pre><p>接下来就可以访问啦！打开浏览器，输入<strong>github用户名.github.io</strong></p>
-<p><strong>最后要想更加完善自己的博客可以去阅读<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">hexo</a>中文文档和<a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="external">next</a>主题文档。</strong></p>
-]]></content>
-      
-        <categories>
-            
-            <category> 搭建博客 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
+      <url>%2F2017%2F03%2F29%2F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%BF%87%E7%A8%8B%2F</url>
+      <content type="text"><![CDATA[为什么要搭建自己的博客呢？前些天，自己刚刚接触hexo，并用hexo搭建了自己的博客，对hexo的强大搭建博客能力感到赞叹。用我的实际体验来说，你只要是有点计算机基础的人，完全可以轻松的使用hexo搭建起自己的博客。你要是用过github、oschina、gitcafe其中的一样，那对你来说，就可以分分钟上手了。其实网上使用hexo搭建博客的教程多的是，我自己也是跟着zippera的教程搭建的博客，那么我还写这篇博客是出于什么目的呢？原因如下：第一，网上的教程大多比较老了，我在搭建的过程中就遇到过不少问题，因此我觉得有必要写个适配hexo3.0的教程。第二，如你所见，本博客由于刚刚起步，博文少的可怜，因此写这篇博文也可以充场子，免得太冷清。第三，算是自己的个人笔记吧，我本人对于刚学的东西都喜欢用博文记录，免得以后自己忘掉。 搭建步骤： 环境搭建 安装配置Hexo 配置github仓库 配置自己的网址（也叫域名） 第一步：环境搭建 安装git （因为要给github上传文章） 安装Node.js（因为Hexo是基于Node.js开发的） ps:因为我已经装过了在此就不多赘述了。 第二步：安装和配置Hexo 以下命令都是直接复制粘贴到电脑终点运行的，上面的环境配置成功以后就可以使用npm安装Hexo了 npm install -g hexo-cli 上面的环境配置成功以后就可以使用npm安装Hexo了，然后cd到Hexo文件夹，也就是进去这个文件夹 然后依次执行下面的命令 hexo init //初始化文件夹 npm install //安装依赖 hexo generate(可简写为hexo g) //生成静态文件 然后启动本地这个Hexo服务 hexo server(可简写为hexo s) 本地查看 现在我们已经搭建起本地的hexo博客了，在浏览器输入localhost:4000看看。 显示的网站你可能看着不好看，现在我们更改一下主题 我的博客主题是：next。 首先打开创建的文件夹，找到themes目录，去网上挑选自己喜欢的主题下载到themes目录，我的github上也有几款主题可供你选择，然后打开根目录下的_config.yml文件，修改里面的theme为你下载主题文件夹的名字，这样主题就换好了。 接着执行下面的命令： hexo clean hexo g hexo s 记得当修改完文件后执行这三步命令，好了，到此为止我们已经完成了本地Hexo的安装和配置。 第三步：配置github仓库注册账号我就不用说了吧，都很简单,然后创建一个的放博客文章的仓库 点击Crete a repositor 切记仓库名字为：github用户名.github.io 接着，打开根目录下的_config.yml，拉到最下面 deploy: type: git repo: &lt;repository url&gt; branch: [branch] 大家要注意每个字段后面有空格,repo记住一定要是https，不能为http,不然会报错 保存，在根目录下依次执行下面的命令： npm install hexo-deployer-git --save hexo clean hexo g hexo d 接下来就可以访问啦！打开浏览器，输入github用户名.github.io 最后要想更加完善自己的博客可以去阅读hexo中文文档和next主题文档。]]></content>
     </entry>
+
     
   
   
